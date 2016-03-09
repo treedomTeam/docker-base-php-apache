@@ -17,6 +17,7 @@ else
 fi
 
 # Fix ownerships
+# taken from https://github.com/kojiromike/docker-magento/blob/master/apache/start_safe_perms
 main() {
     local owner group owner_id group_id tmp
     read owner group owner_id group_id < <(stat -c '%U %G %u %g' .)
