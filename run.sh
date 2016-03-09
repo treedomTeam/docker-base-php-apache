@@ -1,5 +1,5 @@
 #!/bin/bash
-chown www-data:www-data /app -R
+# chown www-data:www-data /app -R
 if [ "$ALLOW_OVERRIDE" = "@false@" ]; then
     unset ALLOW_OVERRIDE
 else
